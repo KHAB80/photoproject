@@ -12,7 +12,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-k=ug=k-cc*ya5ivl&+3-%1h=3rqsn_&r)p91nt04^d4t13=#lx'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["*"]
 
@@ -109,7 +109,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
-
+STATIC_ROOT = 'home/utuntu/static'
 # mediaフォルダの場所(BASE_DTR以下のmedia)を登録
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # mediaのURLを登録
